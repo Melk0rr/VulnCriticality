@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-#define print(s) (cout << s << endl)
+#define print(s) (cout << s)
 
 int main()
 {
@@ -37,7 +37,7 @@ int main()
 
   const bool impactIsHigh = (askImpact == 'y');
   const char *impactStr = (impactIsHigh) ? impactStrings[0] : impactStrings[1];
-  print("User says impact is " << impactStr);
+  print("\nUser says impact is " << impactStr << endl);
 
   // Determine final criticality
   crit = cvss / 3;
